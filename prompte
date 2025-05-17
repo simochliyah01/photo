@@ -1,0 +1,46 @@
+Créer un site web éducatif appelé "Système Solaire Interactif" avec Next.js, React, Framer Motion et Tailwind CSS.
+
+STRUCTURE INITIALE (au chargement de la page) :
+- Un fond spatial fixe représentant l'espace (fond noir avec étoiles scintillantes et nébuleuses/galaxies floues) qui reste inchangé pendant toute l'expérience.
+- Un titre "Système Solaire Interactif" en haut (avec "Interactif" en violet), très discret et petit.
+- Au centre, afficher toutes les planètes du système solaire (Soleil, Mercure, Vénus, Terre, Mars, Jupiter, Saturne, Uranus, Neptune, Lune) en grille. Chaque planète doit être de taille moyenne (120px), tourner lentement sur elle-même dans le sens horaire, et afficher son nom en dessous en petit texte blanc.
+- En bas de l'écran, afficher une rangée de petits boutons avec les noms des planètes. Chaque bouton doit avoir un dégradé de couleur correspondant à sa planète.
+
+COMPORTEMENT APRÈS SÉLECTION :
+Lorsqu'un utilisateur clique sur un bouton de planète :
+1. La grille de planètes disparaît avec une animation de fondu.
+2. Seule la planète sélectionnée apparaît au centre, EXTRÊMEMENT GRANDE (1000px de large, scale 150%), occupant presque tout l'écran (jusqu'à 80vh de hauteur et 98vw de largeur).
+3. La planète continue de tourner lentement dans le sens horaire.
+4. Le nom de la planète apparaît en dessous en très petit texte discret.
+5. Un petit bouton "Voir toutes les planètes" apparaît sous le nom, très discret et minimaliste.
+6. Les boutons de sélection des planètes restent visibles en bas, très petits et discrets.
+
+DÉTAILS VISUELS :
+- Utiliser des images PNG avec fond transparent pour les planètes.
+- Couleurs des boutons :
+  * Soleil : dégradé de jaune à orange
+  * Mercure : dégradé de gris clair à gris foncé
+  * Vénus : dégradé de jaune pâle à jaune foncé
+  * Terre : dégradé de bleu à vert
+  * Mars : dégradé de rouge clair à rouge foncé
+  * Jupiter : dégradé d'orange clair à rouge-brun
+  * Saturne : dégradé de jaune à ambre
+  * Uranus : dégradé de cyan à bleu
+  * Neptune : dégradé de bleu à indigo
+  * Lune : dégradé de gris clair à gris foncé
+
+ANIMATIONS :
+- Rotation continue des planètes (durée : 30 secondes pour un tour complet)
+- Transition fluide avec effet de fondu et de zoom lors du passage entre les vues
+- Effet de survol subtil sur les boutons (légère augmentation de taille)
+- Fond spatial avec étoiles scintillantes animées
+
+INTERFACE MINIMALISTE :
+- Réduire au maximum tous les éléments d'interface (titre, boutons, textes) pour maximiser l'espace disponible pour les planètes
+- Utiliser des textes petits et semi-transparents
+- Boutons avec fond semi-transparent
+- Espacements minimaux entre les éléments
+
+RESPONSIVE :
+- S'adapter à toutes les tailles d'écran
+- Sur mobile, réduire encore plus les éléments d'interface
